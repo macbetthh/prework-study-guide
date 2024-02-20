@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
+    <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
+
+
     <main>
-      <hr>
     <section class="card" id="html-section">
       <h2>HTML</h2>
       <ul>
@@ -25,14 +27,64 @@
         <li>DOCTYPE isn't case senstive -- it's a declaration. HTML elements <i>ARE</i> case-sensitive. </li>
       </ul>
     </section>
-   <hr>
+
+
      <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Css notes</li>
+          <li><b>CSS</b> = Cascading Style Sheets</li>
+          <li>Programming language used by developers to define how webpage content is presented to users</li>
+          <li>CSS defines the colors, aesthetics, visual layout, and organization</li>
         </ul>
+          <section class="card2" id="css-section">
+            <h2>CSS Styling</h2><br>
+                <ol>
+                  <li><b>inline CSS</b> -- used to style an element directly in the HTML file<br>
+                    <ul>
+                      <li><b><u>pro:</u></b> easy and quick styling</li>
+                      <li><b><u>con:</u></b> must be edited individually whenever designs need change</li>
+                      <li><b><u>example:</u></b><br> &lt;h1 style="color:red;"&gt;Prework Study Guide&lt;/h1&gt;</li>
+                    </ul><br>
+
+                  <li><b>internal CSS style sheet</b> -- can be embedded directly in the HTML file using a &lt;style&gt; element in the &lt;head&gt; element</li>
+                    <ul>
+                      <li>CSS rules only apply to the page it's tied to -- a signle change to a rule will apply to all elements tagged with that rule</li>
+                      <li>CSS classes and IDs can style multiple elements in the page code</li>
+                      <li><b><u>example -- this code states that all h1 elements on its webpage will be red:</u></b> <br>
+                        &lt;head&gt;<br>
+                        &nbsp;  &nbsp; &lt;style&gt;<br>
+                        &nbsp; &nbsp; &nbsp; h1 {<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; color: red;<br>
+                            &nbsp;  &nbsp; &nbsp; }<br>
+                            &nbsp;   &nbsp; &lt;/style&gt;<br>
+                         &lt;/head&gt;</li>
+                         
+                    </ul><br>
+
+                  <li><b>external CSS style sheet</b> -- most common way to style a webpage</li>
+                    <ul>
+                      <li>preferred in most cases because it allows developers to keep all their CSS rules in a separate file making design changes easier</li>
+                      <li><b>Separation of concerns</b> is a widely used term in web dev and refers to separating code into diff files based on use</li>
+                      <li><b><u>example of stylesheet linking:</u></b><br>
+                      &lt;head&gt;<br>
+                      &nbsp;&nbsp; &lt;link rel="stylesheet" href="./assets/style.css" /&gt;<br>
+                       &lt;/head&gt;</li>
+                    </ul>
+                  
+                </ol>
+             
+          </section>
+          <ul>
+            <li><b>margin</b> indicates how much space we want around the <i>outside</i> of an element.</li>
+            <li><b>padding</b> indicates how much space we want around the content <i>inside</i> an element.</li>
+            <li>The <b>box-shadow</b> CSS property adds shadow effects around an element's frame</li>
+            <li>The <b>border</b> property assigns a border to the specified class/id (example: the 1px solid gray borders in each section of this page)</li>
+            <li>The <b>box-shadow</b> property adds shadow effects (see the bottom of each box on this page) -- we haven't "learned" this yet, but I've used these before and found a style I liked to spruce up the basic styling we've started so far.</li>
+            <li><b>Assigning colors</b> in CSS can be done in many ways, including by semantic references such as "gray" or "blue". We can also refer to a color by its hexadecimal code, or hex #.</li> 
+          </ul>
       </section>
-   <hr>
+
+      
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
@@ -80,7 +132,8 @@
           
         </ul>       
       </section>
-   <hr>
+
+
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
@@ -88,7 +141,8 @@
         </ul>
       </section>
     </main>
-<hr>
+
+
     <footer>
       <p>I can code!</p>
     </footer>
